@@ -45,7 +45,7 @@ def solicitar_introducir_numero_extremo2(invite, minimum=0, maximum=100):
             # Tenemos lo que queremos, salimos del bucle saliendo de la función
             return datoIntroducido
         else:
-            print("Solo están autorizados los caracteres [1-9].")
+            print("Solo están autorizados los caracteres [1-10].")
 
 def solicitar_introducir_numero(invite):
     """
