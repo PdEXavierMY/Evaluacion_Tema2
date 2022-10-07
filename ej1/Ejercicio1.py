@@ -9,10 +9,3 @@ class Alumno:
             print("El alumno ha aprobado")
         else:
             print("El alumno ha suspendido")
-
-juan = Alumno("Juan", 7)
-pepe = Alumno("Pepe", 4)
-sylvia = Alumno("Sylvia", 2.5)
-juan.calificacion()
-pepe.calificacion()
-sylvia.calificacion()

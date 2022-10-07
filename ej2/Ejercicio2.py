@@ -12,8 +12,3 @@ class Alumno:
             print("El/La alumno/a ha aprobado")
         else:
             print("El/La alumno/a ha suspendido")
-
-juan = Alumno("Juan", 7)
-pepe = Alumno("Pepe", 4)
-sylvia = Alumno("Sylvia", 2.5)
-print(juan); print(pepe), print(sylvia)
