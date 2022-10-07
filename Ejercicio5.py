@@ -15,29 +15,28 @@ class Coche(Vehiculo):
         self.velocidad = velocidad
         self.cilindrada = cilindrada
 
-    def __str__(self):
-        return Vehiculo.__str__(self) + ", {} km/h, {} cc".format(self.velocidad, self.cilindrada)
-
 
 class Bicicleta(Vehiculo):
     def __init__(self, color, ruedas, modelo):
-        super().__init__(color, ruedas)
+        self.color = color
+        self.ruedas = ruedas
         self.modelo = modelo
-
-    def __str__(self):
-        return Vehiculo.__str__(self) + ", Modelo {}".format(self.velocidad, self.cilindrada)
 
 
 class Tren(Vehiculo):
     def __init__(self, color, ruedas, longuitud, antiguedad):
-        super().__init__(color, ruedas)
+        self.color = color
+        self.ruedas = ruedas
         self.longuitud = longuitud
         self.antiguedad = antiguedad
-
-    def __str__(self):
-        return Vehiculo.__str__(self) + ", {} m de longuitud, {} años de antiguedad".format(self.velocidad, self.cilindrada)
 
 c = Coche("azul", 4, 150, 1200)
 b = Bicicleta("verde", 2, "X15")
 t = Tren("gris", "muchas", 650, 2)
 lista_objetos = [c, b, t]
+
+def catalogar(lista, ruedas=0):
+    for elemento in lista:
+        print(elemento)
+
+catalogar(lista_objetos)
