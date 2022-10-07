@@ -1,4 +1,4 @@
-from lanzador import ejecutar
+from lanzador import ejecutar as run
 
 if __name__ == "__main__":
-    ejecutar()
+    run()

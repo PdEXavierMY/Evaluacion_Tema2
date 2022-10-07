@@ -1,10 +1,9 @@
 #1) Código a evaluar:
-def c1(numero):
-    while True:
-        try:
-            numero
-        except ZeroDivisionError:
-            print("No se puede dividir entre 0")
+def c1():
+    try:
+        numero = 7/0
+    except ZeroDivisionError:
+        print("No se puede dividir entre 0")
 
 #2) Código a evaluar:
 def c2(lista):
@@ -26,11 +25,3 @@ def c4():
         resultado = "2" + 10
     except TypeError:
         print("Intentas operar elementos de tipos distintos.")
-
-n = 7/0
-l = [4, 7, 30, 23, 5]
-d = { "españa":"español", "eeuu":"inglés", "italia":"italiano" } 
-c1(n)
-c2(l)
-c3(d)
-c4()

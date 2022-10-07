@@ -25,6 +25,12 @@ def ejecutar():
         a.precio = 18
         print(a)
     elif eleccion == 4:
+        l = [4, 7, 30, 23, 5]
+        d = { "españa":"español", "eeuu":"inglés", "italia":"italiano" } 
+        e4.c1()
+        e4.c2(l)
+        e4.c3(d)
+        e4.c4()
     elif eleccion == 5:
         c = e5.Coche("azul", 4, 150, 1200)
         b = e5.Bicicleta("verde", 2, "X15")
