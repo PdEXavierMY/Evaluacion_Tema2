@@ -3,8 +3,7 @@ from ejercicios.ej2 import Ejercicio2 as e2
 from ejercicios.ej3 import Ejercicio3 as e3
 from ejercicios.ej4 import Ejercicio4 as e4
 from ejercicios.ej5 import Ejercicio5 as e5
-from introducir import solicitar_introducir_numero_extremo2
-from introducir.numero import solicitar_introducir_numero2
+from introducir import solicitar_introducir_numero_extremo2, solicitar_introducir_numero2, solicitar_introducir_cadena
 
 def ejecutar():
     eleccion = solicitar_introducir_numero_extremo2("Eliga que ejercicio ejecutar", 1, 5)
@@ -21,7 +20,7 @@ def ejecutar():
         sylvia = e2.Alumno("Sylvia", solicitar_introducir_numero_extremo2("Introduce una nota", 0, 10))
         print(juan); print(pepe), print(sylvia)
     elif eleccion == 3:
-        a = e3.Producto(1122, "A-steroid", solicitar_introducir_numero2("Introduce un precio"), "Spray")
+        a = e3.Producto(1122, solicitar_introducir_cadena("Introduce el nombre del producto"), solicitar_introducir_numero2("Introduce un precio"), solicitar_introducir_cadena("Introduce le tipo del producto"))
         print(a)
         a.precio = solicitar_introducir_numero2("Introduce un nuevo precio")
         print(a)
