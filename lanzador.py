@@ -26,3 +26,10 @@ def ejecutar():
         print(a)
     elif eleccion == 4:
     elif eleccion == 5:
+        c = e5.Coche("azul", 4, 150, 1200)
+        b = e5.Bicicleta("verde", 2, "X15")
+        t = e5.Tren("gris", "muchas", 650, 2)
+        lista_objetos = [c, b, t]
+        e5.catalogar(lista_objetos); print("\n")
+        e5.catalogar(lista_objetos, 0.2); print("\n")
+        e5.catalogar(lista_objetos, 4)
