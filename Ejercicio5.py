@@ -36,3 +36,8 @@ class Tren(Vehiculo):
 
     def __str__(self):
         return Vehiculo.__str__(self) + ", {} m de longuitud, {} años de antiguedad".format(self.velocidad, self.cilindrada)
+
+c = Coche("azul", 4, 150, 1200)
+b = Bicicleta("verde", 2, "X15")
+t = Tren("gris", "muchas", 650, 2)
+lista_objetos = [c, b, t]
